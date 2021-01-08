@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel='stylesheet' href='main_style.css'>
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    <body>  
+  
+        <div class='container'>
+              <div id='description'>
+                  <h2>Please select a game:</h2> <label for='game'>
+        <select name='game' id='select'>  
+        <option value='romanEncoder'>Roman Numeral Converter</option>
+        <option value='alternateReversing'>Alternate reversing</option>
+        <option value='aviationCode'>NATO code</option>
+        <option value='camelCase'>Camel case</option>
+        <option value='weirdString'>WeIrD StRiNg CaSe</option>
+        <option value='alphabetPosition'>Alphabet position</option>
+            
+        </select>
+        </label>
+           <p id='txt-description'>Please select a game from the dropdown.</p>
+                  
+            </div>
+ <div class='window'></div>
+ <input type='text' placeholder='your text goes here' id='input' tabindex="1">
+ <div class='btn-wrapper'>
+     <button id='encode'>Encode</button>
+     <button id='decode'>Decode</button>
+     
+     <!-- the delete button cleans the window
+          add another button just outside (actually inside) text form 
+-->
+ <i class="fas fa-trash-alt" title="clean all" id='delete'></i>
+ </div>
+</div>
+        
+        <script src='script.js'></script>
+    </body>
+
+</html>
