@@ -13,8 +13,8 @@ let descriptions = {
           //ALPHABET POSITION
           alphabetPosition: "<p>Our last game replaces a string with the position of its single characters in the alphabet. An example: <br>Encode:<br><code><b>numbers from string</b> => 14 21 13 2 5 18 19_6 18 15 13_19 20 18 9 14 7<br><b>we do like numbers</b> => 23 5_4 15_12 9 11 5_14 21 13 2 5 18 19</code></br>Decode:<br><code><b>3 18 1 22 9 14 7_3 15 6 6 5 5</b> => craving coffee<br><b>9 14_12 15 22 5_23 9 20 8_10 1 22 1 19 3 18 9 16 20</b> => in love with javascript</code></p>"
       };     
-
-
+//Make sure the dropdown menu displays the default value when the page is reloaded
+window.onload = () => document.getElementById('select').value = 'empty';
 
 //*** ENCODE FUNCTIONS ***  
     let encodeFunctions = {
