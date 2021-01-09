@@ -1,0 +1,142 @@
+  *, *::after, *::before {
+         box-sizing: border-box;
+     }
+
+#select {
+        min-width: 200px;
+        width: auto;
+        text-align: center;
+        color: #968365;
+        border: 2px solid #EC6D3A;
+        
+        font-size: 20px;
+    }
+    #select:hover {
+        cursor: pointer;
+        border: 2px solid orange;
+    }
+
+    .window {
+      width: 80%;
+      height: 50vh;
+      background: #FFF4C6;
+      position: relative;
+      left: 10%;
+      margin-bottom: 5px;
+      border: 2px solid #ECC93A; 
+      border-radius: 3px;
+      overflow: auto;
+    }
+     
+
+.window p {
+     padding: 5px;
+     color: #EC6D3A;
+     color: #e85217;
+     font-size: 20px;
+     margin-left: 10px;
+     overflow-wrap: break-word;
+ }
+
+
+ #txt-description br {
+    display: block;
+    margin-bottom: 5px;
+  
+  }
+ #txt-description code {
+    display: block;
+    margin: 10px 15px;
+    padding: 10px;
+    border: 2px solid #6C6A62;
+    background: #f3f3f1;
+  }
+
+#txt-description a {
+    text-decoration: none;
+    color: #EC6D3A;
+}
+#txt-description a:hover {
+    font-weight: 600;
+}
+
+
+#description {
+    width: 80%;
+    position: relative;
+    left: 10%;
+    border-bottom: 2px solid #EC6D3A;
+    margin-bottom: 5px;
+}
+#description h2 {
+    color: #ECC93A;
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+
+@media screen and (max-width: 570){
+    #description h2 {
+        margin-bottom: 10px;
+    }
+}
+#description p {
+    font-size: 20px;
+    color: #6C6A62;
+}
+#description > p::first-letter {
+    font-size: 30px;
+    color: #ECC93A;
+    line-height: 80%;
+}
+
+#input {
+    font-size: 20px;
+    color: #6C6A62;
+}
+    .btn-wrapper {
+        width: 80%;
+        height: auto;
+        position: relative;
+        left: 10%;
+        display: flex;
+        justify-content: space-around;
+        padding: 5px 0;
+    }
+
+ .btn-wrapper i {
+      color: red;
+      font-size: 38px;
+      
+  }
+  i:hover {
+      cursor: pointer;
+      opacity: .4;
+  }
+  input {
+      position: relative;
+      width: 80%;
+      left: 10%;
+      padding: 5px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 3px;
+      color: #6C6A62;
+      font-family: cursive;
+  }
+
+#input:focus {
+    border: 2px solid #EC6D3A;
+}
+
+  button {
+      color: white;
+      background: #FFA100;
+      font-size: 30px;
+      border-radius: 3px;
+      border: 2px solid orange;
+  }
+  button:hover {
+      cursor: pointer;
+      color:  indianred;
+  }
