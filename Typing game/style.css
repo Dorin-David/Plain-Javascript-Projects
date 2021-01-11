@@ -1,0 +1,61 @@
+#container {
+    width: 60vw;
+    height: auto;
+    position: relative;
+    left: 20vw;
+    border: 3px solid #C10E00;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-top: 10%;
+  }
+  input {
+    width: 80%;
+    padding: 2px 10px;
+    position: relative;
+    left: 10%;
+    font-size: 20px;
+    margin-bottom: 30px;
+    border: 2px solid orange;
+  }
+
+#time {
+    color: #E4243A;
+    font-size: 30px;
+    text-align: center;
+}
+
+  #word {
+    color: orange;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+
+button {
+  background: #FFAB1C;
+  color: whitesmoke;
+  border: 2px solid #C70C48;
+  font-size: 30px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  position: relative;
+  left: 45%;
+}
+button:hover {
+  color: #E4243A;
+  cursor: pointer;
+}
+
+#points {
+   display: none;
+   color: rebeccapurple;
+  font-size: 30px;
+  text-align: center;    
+}
+        
+span {
+    position: absolute;
+    left: 40%;
+}
