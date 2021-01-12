@@ -16,7 +16,7 @@
    //below a reference to the words that will be displayed
    let word = document.getElementById('word');
     //variables for time and score
-    let counter = 10; 
+    let counter = 30; 
     let score = 0;
     //display 'Ready' message
     setTimeout(function(){
