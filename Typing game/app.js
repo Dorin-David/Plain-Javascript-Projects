@@ -32,7 +32,6 @@
         word.style['font-size'] = '40px';
         //display current score (which has a 'display: none' when the page is loaded)
         document.getElementById('points').style.display = 'block';
-        //document.getElementById('word').style.display = 'block';
         
     }, 1000);
 
@@ -44,8 +43,9 @@
       if(counter == 0){ //base case for ending loop
           time.innerHTML = `You have scored ${score} point(s)!`; //display final score
            document.getElementById('points').style.display = 'none';
-          document.getElementById('btn').style.display = 'block';
+          document.getElementById('btn').style.display = 'block'; 
           document.getElementById('word').style.display = 'none';
+         document.getElementById('challenge').value = ''; //clear input field
           return 
       }
       interval = setTimeout(inner, 1000); //calls itself till base case is reached (counter reaches 0)
