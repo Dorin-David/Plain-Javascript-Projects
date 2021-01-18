@@ -44,7 +44,7 @@
           time.innerHTML = `You have scored ${score} point(s)!`; //display final score
            document.getElementById('points').style.display = 'none';
           document.getElementById('btn').style.display = 'block'; 
-          document.getElementById('word').style.display = 'none';
+          document.getElementById('word').innerHTML = '';
          document.getElementById('challenge').value = ''; //clear input field
           return 
       }
@@ -64,7 +64,7 @@ return function(e){
          if(counter == 0) return //base case, time has finished
          //if the current word written by the user matches the displayed one
       if(word.innerHTML == currentWord) { 
-        score++; //update score
+        score += currentWord.length; //update score
         currentWord = ''; //clear current word
         document.getElementById('points').innerHTML = `<span>score:</span> ${score}`; //update score
         word.innerHTML = wordList[Math.floor(Math.random() * wordList.length)]; // get next word
