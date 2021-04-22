@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --red: rgb(240, 69, 69)
+}
+
+
+.presentation {
+    width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--red);
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.8rem;
+  color: white;
+  transition: .4s ease-in all;
+}
+
+button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.restart {
+  margin: auto;
+}
+
+.counter {
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.4rem;
+    color: var(--red);
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(6, 150px);
+    grid-auto-rows: 150px;
+    place-content: center;
+    gap: 1px;
+}
+
+
+.box {
+  width: 150px;
+  height: 150px;
+  background: lightgray;
+  border-radius: 4px;
+}
+
+.target {
+  background: gray;
+}
+
+.points-counter {
+   height: 70px;
+   margin: 50px auto;
+   font-size: 2.4rem;
+   text-align: center;
+   color: var(--red);
+}
+
+
+.hidden {
+    display: none;
+}
+
